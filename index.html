@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+<style>
+    .igor{
+    width: 270px;
+    height: 260px;
+    }
+</style>
+
+
+
+
+
+
+
+
 <body>
     <header class="header">
         <a class="logo" href="">Web <span class="header-logo">Studio</span></a>
@@ -27,7 +41,7 @@
             <h1 class="section-hero-title">
                 Ефективні рішення для вашого бізнесу
             </h1>
-           <button class="section-hero-btn">Замовити послугу</button>
+           <button class="section-hero-btn"data-modal-open>Замовити послугу</button>
         </section >
         <section class="section-features">
             <ul class="features-list">
@@ -68,7 +82,7 @@
                     <p>UI Designer</p>
                 </li>
                 <li>
-                <img src="./igor.jpg" alt="">
+                <img class="igor" src="./img.jpg" alt="">
                     <h5 class="team-list-title">Ігор Дем'яненко</h5>
                     <p>Product Designer</p>
                 </li>
@@ -87,8 +101,9 @@
         </section>
        
     </main>
-    <footer>
-        <h2><a href="">web Studio</a></h2>
+    <footer class="footer">
+        <div class="container">
+            <h2><a href="">web Studio</a></h2>
 
         <address>
             <ul>
@@ -97,6 +112,29 @@
                 <li><a href="contacts-list-link">м. Київ, пр-т Лесі Українки, 26</a></li>
             </ul>
         </address>
+    </div>
+        
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+<button data-modal-close class="close-btn">close</button>
+
+            <form action="">
+                <h2>Залиште свої данні ми перезвонимо</h2>
+                <input class="input" placeholder= "введіть ваше ім'я" type="text" >
+                <input class="input" placeholder= "Введіть ваш номер телефону" type="tel">
+                <input class="input" placeholder= "введіть ваше повідомлення" type="text">
+                <div class="box">
+                    <input type="checkbox">
+                <p class="ros">Погоджуюся з розсилкою та приймаю Умови договору</p>
+                
+
+               </div>
+                <button class="button-send">Відправити</button>
+        </div>
+
+        </div>
+        <script src="./script.js"></script>
 </body>
 </html>
